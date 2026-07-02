@@ -1,0 +1,8 @@
+"DESCRIPTION","DURATION IN MS","NAME","PARENT SUITE","START TIME","STATUS","STOP TIME","SUB SUITE","SUITE","TEST CLASS","TEST METHOD"
+"","7098","Portico HRMS Login Test","webkit","2026-06-30","failed","2026-06-30","","Portico.spec.js","",""
+"","5428","Ecommerce Add Product Test","chromium","2026-06-29","passed","2026-06-29","","ecommerce.spec.js","",""
+"","10622","Practice Test Automation - Login Test","chromium","2026-06-29","passed","2026-06-29","","Login.spec.js","",""
+"","19314","Portico HRMS Login Test","chromium","2026-06-30","failed","2026-06-30","","Portico.spec.js","",""
+"","9966","Ecommerce Add Product Test","firefox","2026-06-29","passed","2026-06-29","","ecommerce.spec.js","",""
+"","4904","Ecommerce Add Product Test","webkit","2026-06-29","passed","2026-06-29","","ecommerce.spec.js","",""
+"","20509","Portico HRMS Login Test","firefox","2026-06-30","failed","2026-06-30","","Portico.spec.js","",""
