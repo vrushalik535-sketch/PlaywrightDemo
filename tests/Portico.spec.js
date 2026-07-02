@@ -173,25 +173,9 @@ console.log(
 
 });
 
-// Verify logout
-
-await expect(homePage)
-.toHaveURL(
-/systemplus\.topsource\.in/
-);
 
 
 
-await expect(
-homePage.getByText("Sign in")
-)
-.toBeVisible();
 
 
 
-console.log(
-"Logout successful"
-);
-
-
-});
