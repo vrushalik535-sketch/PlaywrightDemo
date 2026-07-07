@@ -1,0 +1,1 @@
+Mail sending failed: SMTP credentials are missing.

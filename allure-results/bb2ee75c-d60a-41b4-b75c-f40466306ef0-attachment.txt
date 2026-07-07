@@ -1,0 +1,4 @@
+Login successful
+SMTP Connection Successful
+Mail Sent Successfully
+250 Message received

@@ -1,0 +1,55 @@
+# Instructions
+
+- Following Playwright test failed.
+- Explain why, be concise, respect Playwright best practices.
+- Provide a snippet of code with the fix, if possible.
+
+# Test info
+
+- Name: Flexplm.spec.js >> FlexPLM SSO Login
+- Location: tests\Flexplm.spec.js:3:5
+
+# Error details
+
+```
+Test timeout of 30000ms exceeded.
+```
+
+```
+Error: page.waitForLoadState: Test timeout of 30000ms exceeded.
+=========================== logs ===========================
+  "commit" event fired
+============================================================
+```
+
+# Test source
+
+```ts
+  1  | import { test, expect } from '@playwright/test';
+  2  | 
+  3  | test('FlexPLM SSO Login', async ({ page }) => {
+  4  | 
+  5  |     // Open FlexPLM
+  6  |     await page.goto('https://nb-sandbox.ptcmscloud.com/Windchill/rfa/jsp/main/Main.jsp');
+  7  | 
+  8  |     // Wait for Ping Identity page
+> 9  |     await page.waitForLoadState('networkidle');
+     |                ^ Error: page.waitForLoadState: Test timeout of 30000ms exceeded.
+  10 | 
+  11 |     // Click the saved account
+  12 |     await page.getByText('vrushali.kangane').click();
+  13 | 
+  14 |     // Wait for FlexPLM Home page
+  15 |     await page.waitForLoadState('networkidle');
+  16 | 
+  17 |     // Verify URL
+  18 |     await expect(page).toHaveURL(/Windchill/);
+  19 | 
+  20 |     // Verify Home page loaded
+  21 |     await expect(page.getByText('Notices')).toBeVisible();
+  22 |     await expect(page.getByText('Season Dashboard')).toBeVisible();
+  23 |     await expect(page.getByText('Product Sample Dashboard')).toBeVisible();
+  24 | 
+  25 |     console.log('Successfully logged into FlexPLM');
+  26 | });
+```

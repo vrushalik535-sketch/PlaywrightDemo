@@ -1,0 +1,19 @@
+Email sending failed.
+Error: Invalid login: 535 5.7.139 Authentication unsuccessful, the request did not meet the criteria to be authenticated successfully. Contact your administrator. [PN2PR01CA0027.INDPRD01.PROD.OUTLOOK.COM 2026-07-02T11:41:43.526Z 08DED734EA65C02C]
+    at SMTPConnection._formatError (C:\Users\vrushali.kangane\OneDrive - Systems Plus Pvt. Ltd\Desktop\Playwright_Practice\node_modules\nodemailer\lib\smtp-connection\index.js:938:19)
+    at SMTPConnection._actionAUTHComplete (C:\Users\vrushali.kangane\OneDrive - Systems Plus Pvt. Ltd\Desktop\Playwright_Practice\node_modules\nodemailer\lib\smtp-connection\index.js:1784:34)
+    at SMTPConnection.<anonymous> (C:\Users\vrushali.kangane\OneDrive - Systems Plus Pvt. Ltd\Desktop\Playwright_Practice\node_modules\nodemailer\lib\smtp-connection\index.js:1738:18)
+    at SMTPConnection._processResponse (C:\Users\vrushali.kangane\OneDrive - Systems Plus Pvt. Ltd\Desktop\Playwright_Practice\node_modules\nodemailer\lib\smtp-connection\index.js:1150:20)
+    at SMTPConnection._onData (C:\Users\vrushali.kangane\OneDrive - Systems Plus Pvt. Ltd\Desktop\Playwright_Practice\node_modules\nodemailer\lib\smtp-connection\index.js:898:14)
+    at TLSSocket.SMTPConnection._onSocketData (C:\Users\vrushali.kangane\OneDrive - Systems Plus Pvt. Ltd\Desktop\Playwright_Practice\node_modules\nodemailer\lib\smtp-connection\index.js:224:44)
+    at TLSSocket.emit (node:events:519:28)
+    at addChunk (node:internal/streams/readable:561:12)
+    at readableAddChunkPushByteMode (node:internal/streams/readable:512:3)
+    at TLSSocket.Readable.push (node:internal/streams/readable:392:5)
+    at TLSWrap.onStreamRead (node:internal/stream_base_commons:189:23)
+    at TLSWrap.callbackTrampoline (node:internal/async_hooks:130:17) {
+  code: 'EAUTH',
+  response: '535 5.7.139 Authentication unsuccessful, the request did not meet the criteria to be authenticated successfully. Contact your administrator. [PN2PR01CA0027.INDPRD01.PROD.OUTLOOK.COM 2026-07-02T11:41:43.526Z 08DED734EA65C02C]',
+  responseCode: 535,
+  command: 'AUTH LOGIN'
+}
