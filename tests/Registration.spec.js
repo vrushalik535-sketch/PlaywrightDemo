@@ -8,7 +8,7 @@ test('Registration Form Automation', async ({ page }) => {
   await page.fill('#lastName', 'Kangane');
   await page.fill('#userEmail', 'vrushali@test.com');
 
-  await page.click('label[for="gender-radio-2"]');
+  await page.click('label[for="gender-radio-1"]');
 
   await page.fill('#userNumber', '9876543210');
 
