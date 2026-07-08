@@ -10,6 +10,7 @@ test('Registration Form Automation', async ({ page }) => {
 
   await page.click('label[for="gender-radio-1"]');
 
+  
   await page.fill('#userNumber', '9876543210');
 
   await page.fill('#currentAddress', 'Mumbai');
