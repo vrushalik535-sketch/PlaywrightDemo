@@ -16,6 +16,7 @@ class LoginPage {
 
         this.loginButton = "#login-button";
 
+        
     }
 
 
