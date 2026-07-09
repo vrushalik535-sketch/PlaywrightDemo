@@ -80,12 +80,13 @@ test.describe('Login Functionality', () => {
     await page.goto(
       'https://practicetestautomation.com/practice-test-login/'
     );
-    
+
 // Take screenshot before entering credentials
 await page.screenshot({
     path: 'before-login.png',
     fullPage: true
 });
+    console.log('Screenshot captured');
 
     await page.fill('#username', 'student');
 
