@@ -11,6 +11,7 @@
       process.env.MAIL_TO || 'vrushali.kangane@systems-plus.com';
 
     // Validate credentials
+    
     if (!smtpUser || !smtpPass) {
       throw new Error('Missing SMTP_USER or SMTP_PASS.');
     }
